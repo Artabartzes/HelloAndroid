@@ -9,17 +9,17 @@
     <ImageView
         android:id="@+id/u_image_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="@dimen/image_height"
         android:padding="@dimen/padding_dp"
-        android:scaleType="centerInside"
+        android:scaleType="centerCrop"
         android:src="@drawable/udacity" />
 
     <TextView
         android:id="@+id/address_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/u_image_view"
         android:paddingLeft="@dimen/padding_dp"
-        android:paddingTop="@dimen/padding_dp"
         android:text="@string/address"
         android:textSize="@dimen/heading_sp"
         android:textStyle="bold" />
@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/address_text_view"
         android:layout_below="@id/address_text_view"
+        android:autoLink="map"
         android:paddingLeft="@dimen/padding_dp"
         android:text="@string/udacity_address" />
 
