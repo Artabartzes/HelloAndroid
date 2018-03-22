@@ -31,6 +31,8 @@
         android:layout_alignLeft="@id/address_text_view"
         android:layout_below="@id/address_text_view"
         android:autoLink="map"
+        android:drawableLeft="@drawable/map2"
+        android:drawablePadding="@dimen/icon_padding"
         android:paddingLeft="@dimen/padding_dp"
         android:text="@string/udacity_address" />
 
@@ -53,6 +55,8 @@
         android:layout_alignLeft="@id/phone_text_view"
         android:layout_below="@id/phone_text_view"
         android:autoLink="phone"
+        android:drawableLeft="@drawable/phone2"
+        android:drawablePadding="@dimen/icon_padding"
         android:paddingLeft="@dimen/padding_dp"
         android:text="@string/udacity_phone" />
 
@@ -74,6 +78,8 @@
         android:layout_alignLeft="@id/web_text_view"
         android:layout_below="@id/web_text_view"
         android:autoLink="web"
+        android:drawableLeft="@drawable/web2"
+        android:drawablePadding="@dimen/icon_padding"
         android:paddingLeft="@dimen/padding_dp"
         android:text="@string/udacity_web" />
 
