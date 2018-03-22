@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.helloandroid.MainActivity">
+
+    <ImageView
+        android:id="@+id/u_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/udacity" />
+
+    <TextView
+        android:id="@+id/address_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_dp"
+        android:paddingTop="@dimen/padding_dp"
+        android:text="@string/address"
+        android:textSize="@dimen/heading_sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/address_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/address_text_view"
+        android:layout_below="@id/address_text_view"
+        android:paddingLeft="@dimen/padding_dp"
+        android:text="@string/udacity_address" />
+
+
+    <TextView
+        android:id="@+id/phone_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_text"
+        android:paddingLeft="@dimen/padding_dp"
+        android:paddingTop="@dimen/padding_dp"
+        android:text="@string/phone"
+        android:textSize="@dimen/heading_sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/phone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/phone_text_view"
+        android:layout_below="@id/phone_text_view"
+        android:autoLink="phone"
+        android:paddingLeft="@dimen/padding_dp"
+        android:text="@string/udacity_phone" />
+
+
+    <TextView
+        android:id="@+id/web_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_text"
+        android:paddingLeft="@dimen/padding_dp"
+        android:paddingTop="@dimen/padding_dp"
+        android:text="@string/web"
+        android:textSize="@dimen/heading_sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/web_text_view"
+        android:layout_below="@id/web_text_view"
+        android:autoLink="web"
+        android:paddingLeft="@dimen/padding_dp"
+        android:text="@string/udacity_web" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/padding_dp"
+        android:text="@string/students_first"
+        android:textSize="@dimen/large_sp" />
+</RelativeLayout>
